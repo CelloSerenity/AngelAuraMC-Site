@@ -45,7 +45,7 @@ Google Play is currently unavailable. Sorry! Try one of the methods above!
 Instructions for installing Amethyst on Apple devices.
 
 ::: details Sideloading (TrollStore)
-We recommend TrollStore for all users if possible. This method allows for automatic JIT enabling, more memory allocation, and non-revoking installs.
+We recommend TrollStore for all users if possible. This method allows for automatic JIT enabling, more memory allocation, and non-revoking installs. If your device/iOS version doesn't support TrollStore, go to "Sideloading (Jailed)".
 
 Note: **Enable URL Schemes in TrollStore settings: TrollStore -> Settings -> Scroll Down -> Enable URLScheme > Rebuild Icons Cache**
 
@@ -75,24 +75,30 @@ Note: **Enable URL Schemes in TrollStore settings: TrollStore -> Settings -> Scr
 3. Locate where the .ipa was downloaded, tap the Share icon, and choose TrollStore in the list of options available.
 
 You can now enjoy Minecraft: Java Edition on your iDevice!
+
+::: details Sideloading (Jailed)
+**Requires an active Apple ID, that has signed into the [Apple Developer Program](https://developer.apple.com/account).**
+
+Amethyst supports being sideloaded with AltStore and SideStore. Instructions to use SideStore are below--for other options, refer to their documentation.
+
+1. Follow the official guide on installing SideStore itself (requies the one-time use of a computer):
+    - [SideStore Documentation](https://docs.sidestore.io/docs/installation/prerequisites).
+  
+2. Download the latest developer build from [here](https://nightly.link/AngelAuraMC/Amethyst-iOS/workflows/development/main/org.angelauramc.amethyst-ios.ipa.zip). Expect to encounter bugs! Install it via SideStore using the "+" button on the "Apps" page. 
+
+3. GetMoreRam increases the memory limit imposed by iOS/iPadOS on sideloaded apps, and is required for Amethyst. Download GetMoreRam [here](https://github.com/hugeBlack/GetMoreRam/releases/download/nightly/Entitlement.ipa) . Install Entitlement.ipa via SideStore. Open GetMoreRam, navigate to Settings and select "Sign In". Use your Apple Account credentials to log in. If the app crashes, just try again. Navigate to "App IDs" and select "Refresh". Select the App ID including "amethyst", then select "Add Increased Memory Limit". If a bunch of text appears underneath with no mention of an error, you did it correctly. Now, you can delete Get More Ram.
+
+4. Resideload the Amethyst .ipa via SideStore (you don't need to delete it first) so the memory entitlement takes effect. (Note: If your Amethyst expires you will need to repeat this step).
+
+Installing Amethyst is not the end for Jailed iOS devices. In order to play Minecraft itself, you will need to [enable JIT](../faq/ios/JIT.md).
+:::
+
 :::
 ::: warning
  Everything below are outdated instructions. Please avoid using them.
 :::
-<!-- TODO: fix the rest of IOS i am not touching sidestore shit :sob: -->
-::: details Sideloading (Jailed)
-**Requires an active Apple ID, that has signed into the [Apple Developer Program](https://developer.apple.com/account).**
+<!-- TODO: fix the rest of iOS -->
 
-PojavLauncher supports being sideloaded with AltStore and SideStore. Instructions to use SideStore are below--for other options, refer to their documentation.
-
-1. Follow the official guide on installing AltStore itself:
-    - Instructions for [Mac](https://docs.sidestore.io/docs/getting-started/mac) and [Windows](https://docs.sidestore.io/docs/getting-started/windows)
-    
-2. Install the latest release using this [Install with SideStore](sidestore://install?url=https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases/latest/download/net.kdt.pojavlauncher.ipa) button.
-    - For a specific release, you can find its button on the [Releases](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases) page
-
-Installing PojavLauncher is not the end for Jailed iOS devices. In order to play Minecraft itself, you will need to [enable JIT](../faq/ios/JIT.md).
-:::
 
 ::: details Sideloading (Jailbroken)
 **Currently, AppSync Unified is not supported.** There is an [issue](https://github.com/akemin-dayo/AppSync/issues/108) regarding the data directory when installed with AppSync.
