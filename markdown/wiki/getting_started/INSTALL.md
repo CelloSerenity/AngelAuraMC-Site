@@ -78,7 +78,7 @@ You can now enjoy Minecraft: Java Edition on your iDevice!
 :::
 
 ::: details Sideloading (Jailed)
-**Requires an active Apple ID, that has signed into the [Apple Developer Program](https://developer.apple.com/account).**
+**Requires an active Apple Account that has signed into the [Apple Developer Program](https://developer.apple.com/account).**
 
 Amethyst supports being sideloaded with AltStore and SideStore. Instructions to use SideStore are below--for other options, refer to their documentation.
 
@@ -93,7 +93,7 @@ Amethyst supports being sideloaded with AltStore and SideStore. Instructions to 
    - Navigate to "App IDs" and select "Refresh". Select the App ID including "amethyst", then select "Add Increased Memory Limit".
    - If a bunch of text appears underneath with no mention of an error, you did it correctly. Now, you can delete GetMoreRam.
 
-5. Download and unzip the latest Amethyst .ipa from [here](https://nightly.link/AngelAuraMC/Amethyst-iOS/workflows/development/main/org.angelauramc.amethyst-ios.ipa.zip), then reinstall it via SideStore as if you are updating the app (you don't need to delete it first) so the memory entitlement takes effect. (Note: If your Amethyst expires you will need to repeat this step).
+5. Reinstall the latest Amethyst build from [here](https://intradeus.github.io/http-protocol-redirector/?r=sidestore://install?url=https://ci.angelauramc.dev/job/Amethyst-iOS/lastSuccessful/artifact/org.angelauramc.amethyst-1.0-ios.ipa) as if you are updating the app (you don't need to delete it first) so the memory entitlement takes effect. (Note: If your Amethyst expires you will need to repeat the last two steps).
 
 Installing Amethyst is not the end for Jailed iOS devices. In order to play Minecraft itself, you will need to [enable JIT](../faq/ios/JIT.md).
 :::
