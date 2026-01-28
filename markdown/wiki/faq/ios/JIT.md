@@ -25,39 +25,13 @@ The only downside to this method is that you are often required to be connected 
 
 ## What are the methods to enable JIT?
 
-The methods to enable JIT for each iOS version can be found [here](https://github.com/C4ndyF1sh/iOS-JIT-Enablers).
+A list of methods and walkthrough to enable JIT for each iOS version can be found [here](https://github.com/C4ndyF1sh/iOS-JIT-Enablers). Additionally, a guide to enabling JIT for Amethyst on iOS 17.4+ follows.
 
-Methods not listed underneath are not confirmed nor recommended by us for use with Amethyst.
+## Enabling JIT for iOS 17.4+ (Jailed):
 
-## So how do I enable JIT?
-
-- [TrollStore Lite](https://havoc.app/package/trollstorelite) (!)
-
-- [TrollStore](https://ios.cfw.guide/installing-trollstore) (@)
-
-- [StikDebug](https://stikdebug.xyz/) (^)
-
-- [SideStore](https://docs.sidestore.io/docs/advanced/jit) (*)
-
-- [AltStore AltJIT](https://faq.altstore.io/how-to-use-altstore/altjit) (#)
-
-- [Jitterbug](https://github.com/osy/Jitterbug/tree/main/Jitterbug) ($)
-
-- [SideJITServer](https://github.com/nythepegasus/SideJITServer) (%)
-
-
-
-(!) - Limited to Jailbroken devices only. (JIT is granted by the Jailbreak itself)
-
-(@) - Limited to devices with the CoreTrust bug. (iOS 14.0 - iOS 16.7 RC & iOS 17.0)
-
-(^) - iOS 17.4+ only.
-
-(*) - iOS 17.4+, 17.4-18.7.4 only on TXM devices.
-
-(#) - AltJIT for iOS 17.0.1+ betas only works on macOS. Requires pymobiledevice3.
-
-($) - Does not work for iOS 17.0.1+, as enabling JIT will be done with pymobiledevice3.
-
-(%) - Does not work for iOS 16.x or below, use the other methods listed above to enable JIT. This method is meant for iOS 17.0.1-17.3.1 .
-
+1. Sideload Angel Aura Amethyst with the `get-task-allow` entitlement. A walkthrough to installing Amethyst with SideStore can be found [here](/getting-started/INSTALL.md).
+2. Add the StikDebug Source to SideStore by [tapping here](https://intradeus.github.io/http-protocol-redirector?r=sidestore://source?url=https://stikdebug.xyz/index.json) on your iOS device. Install StikDebug from the source.
+3. Set up StikDebug by following the [pairing file guide](https://github.com/StephenDev0/StikDebug-Guide/blob/main/pairing_file.md).
+4. On your iOS/iPadOS device, connect to a Wi-Fi network or enable Airplane Mode, then open StikDebug, select "Connect by App", and select Amethyst. You must repeat this step every time you open Amethyst.
+5. Congrats, you have successfully enabled JIT for Amethyst.
+6. 
