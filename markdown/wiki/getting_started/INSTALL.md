@@ -75,6 +75,7 @@ Note: **Enable URL Schemes in TrollStore settings: TrollStore -> Settings -> Scr
 3. Locate where the .ipa was downloaded, tap the Share icon, and choose TrollStore in the list of options available.
 
 You can now enjoy Minecraft: Java Edition on your iDevice!
+:::
 
 ::: details Sideloading (Jailed)
 **Requires an active Apple ID, that has signed into the [Apple Developer Program](https://developer.apple.com/account).**
@@ -84,18 +85,21 @@ Amethyst supports being sideloaded with AltStore and SideStore. Instructions to 
 1. Follow the official guide on installing SideStore itself (requies the one-time use of a computer):
     - [SideStore Documentation](https://docs.sidestore.io/docs/installation/prerequisites).
   
-2. Download the latest developer build from [here](https://nightly.link/AngelAuraMC/Amethyst-iOS/workflows/development/main/org.angelauramc.amethyst-ios.ipa.zip). Expect to encounter bugs! Install it via SideStore using the "+" button on the "Apps" page. 
+2. Add the Amethyst AltSource to SideStore [here](https://intradeus.github.io/http-protocol-redirector?r=sidestore://source?url=https://alt.crystall1ne.dev). Install Amethyst to SideStore to register the App ID. Expect to encounter bugs! Install it via SideStore using the "+" button on the "Apps" page. 
 
-3. GetMoreRam increases the memory limit imposed by iOS/iPadOS on sideloaded apps, and is required for Amethyst. Download GetMoreRam [here](https://github.com/hugeBlack/GetMoreRam/releases/download/nightly/Entitlement.ipa) . Install Entitlement.ipa via SideStore. Open GetMoreRam, navigate to Settings and select "Sign In". Use your Apple Account credentials to log in. If the app crashes, just try again. Navigate to "App IDs" and select "Refresh". Select the App ID including "amethyst", then select "Add Increased Memory Limit". If a bunch of text appears underneath with no mention of an error, you did it correctly. Now, you can delete Get More Ram.
+3. GetMoreRam increases the memory limit imposed by iOS/iPadOS on sideloaded apps, and is required to run Amethyst. Complete the following steps to set it up:
+   - Install the GetMoreRam .ipa to SideStore [here](https://intradeus.github.io/http-protocol-redirector?r=sidestore://install?url=https://github.com/hugeBlack/GetMoreRam/releases/download/nightly/Entitlement.ipa).
+   - Install Entitlement.ipa via SideStore. Open GetMoreRam, navigate to Settings and select "Sign In". Use your Apple Account credentials to log in. (If the app crashes, just try again.)
+   - Navigate to "App IDs" and select "Refresh". Select the App ID including "amethyst", then select "Add Increased Memory Limit".
+   - If a bunch of text appears underneath with no mention of an error, you did it correctly. Now, you can delete GetMoreRam.
 
-4. Resideload the Amethyst .ipa via SideStore (you don't need to delete it first) so the memory entitlement takes effect. (Note: If your Amethyst expires you will need to repeat this step).
+5. Download and unzip the latest Amethyst .ipa from [here](https://nightly.link/AngelAuraMC/Amethyst-iOS/workflows/development/main/org.angelauramc.amethyst-ios.ipa.zip), then reinstall it via SideStore as if you are updating the app (you don't need to delete it first) so the memory entitlement takes effect. (Note: If your Amethyst expires you will need to repeat this step).
 
 Installing Amethyst is not the end for Jailed iOS devices. In order to play Minecraft itself, you will need to [enable JIT](../faq/ios/JIT.md).
 :::
 
-:::
 ::: warning
- Everything below are outdated instructions. Please avoid using them.
+ All boxes below include outdated instructions. Please avoid using them.
 :::
 <!-- TODO: fix the rest of iOS -->
 
