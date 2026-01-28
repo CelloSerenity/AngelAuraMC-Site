@@ -47,7 +47,7 @@ module.exports = {
       },
     ],
   ],
-  base: "/",
+  base: "/AngelAuraMC-Site/",
   dest: "./docs",
 
   watch: {
