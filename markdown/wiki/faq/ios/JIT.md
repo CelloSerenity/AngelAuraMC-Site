@@ -32,6 +32,6 @@ A list of methods and walkthrough to enable JIT for each iOS version can be foun
 1. Sideload Angel Aura Amethyst with the `get-task-allow` entitlement. A walkthrough to installing Amethyst with SideStore can be found [here](/getting-started/INSTALL.md).
 2. Add the StikDebug Source to SideStore by [tapping here](https://intradeus.github.io/http-protocol-redirector?r=sidestore://source?url=https://stikdebug.xyz/index.json) on your iOS device. Install StikDebug from the source.
 3. Set up StikDebug by following the [pairing file guide](https://github.com/StephenDev0/StikDebug-Guide/blob/main/pairing_file.md).
-4. On your iOS/iPadOS device, connect to a Wi-Fi network or enable Airplane Mode, then open StikDebug, select "Connect by App", and select Amethyst. You must repeat this step every time you open Amethyst.
-5. Congrats, you have successfully enabled JIT for Amethyst.
-6. 
+4. Navigate to StikDebug → Settings. If the bottom of the page shows "TXM" instead of "Non-TXM", toggle "Picture in Picture" and "Always Run Scripts" on.
+5. On your iOS/iPadOS device, connect to a Wi-Fi network or enable Airplane Mode, then open StikDebug, select "Connect by App", and select Amethyst. If a picture in picture window appears, keep it open until prompted. You must repeat this step every time you open Amethyst after a decent amount of time.
+6. Congrats, you have successfully enabled JIT for Amethyst. You can now reenable Cellular Data if you wish.
